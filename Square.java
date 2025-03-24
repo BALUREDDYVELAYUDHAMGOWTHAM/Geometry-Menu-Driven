@@ -4,7 +4,7 @@ class Square extends Shape{
     Scanner sc=new Scanner(System.in);
     Square()
     {
-        System.out.println("Enter the side of the Circle : ");
+        System.out.println("Enter the side of the Square: ");
         this.side=sc.nextDouble();
     }
     void getArea()
