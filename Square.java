@@ -1,8 +1,8 @@
 import java.util.*;
-class square extends Shape{
+class Square extends Shape{
     double side;
     Scanner sc=new Scanner(System.in);
-    square()
+    Square()
     {
         System.out.println("Enter the side of the Circle : ");
         this.side=sc.nextDouble();
