@@ -1,23 +1,29 @@
 import java.util.*;
-class square{
-    int side;
-    square()
+class Square extends Shape{
+    double side;
+    public Square()
     {
-        side = 0;
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the side of the Square: ");
+        this.side=sc.nextDouble();
+    }
+
+    @Override
+    void getArea()
+    {
+        System.out.println("The Area of the Square is "+(side * side));
     }
     
-    int getArea()
+    @Override
+    void getPerimeter()
     {
-        return side * side;
+        System.out.println("The Perimeter of the Square is "+(4 * side));
     }
-
-    int getPerimeter()
+    
+    @Override
+    void getVolume()
     {
-        return 4 * side;
-    }
-
-    int getVolume()
-    {
-        return side * side * side;
+        System.out.println("Assuming it has Cube");
+        System.out.println("The Volume of the Cube is "+(side * side * side));
     }
 }

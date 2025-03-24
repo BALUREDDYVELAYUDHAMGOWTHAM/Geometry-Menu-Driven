@@ -1,15 +1,14 @@
 import java.util.*;
 public class Circle extends Shape {
     double radius;
-    Scanner sc=new Scanner(System.in);
     public Circle(){
-        System.out.println("Enter the Radius of the Circle : ");
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Enter the Radius of the Circle : ");
         this.radius=sc.nextDouble();
     }
     @Override
     void getArea() {
        System.out.println("Area of Cicle : "+(3.14*radius*radius));
-        
     }
 
     @Override
@@ -19,7 +18,7 @@ public class Circle extends Shape {
 
     @Override
     void getVolume() {
-        System.out.println("Circle  has no volume");
+        System.out.println("Assuming it has Sphere");
+        System.out.println("The Volume of the Sphere is "+((4*1.0/3) * 3.14 * radius * radius * radius));
     }
-    
 }
