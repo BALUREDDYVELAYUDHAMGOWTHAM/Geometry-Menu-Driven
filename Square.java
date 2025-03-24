@@ -1,23 +1,24 @@
 import java.util.*;
-class square{
-    int side;
+class square extends Shape{
+    double side;
+    Scanner sc=new Scanner(System.in);
     square()
     {
-        side = 0;
+        System.out.println("Enter the side of the Circle : ");
+        this.side=sc.nextDouble();
     }
-    
-    int getArea()
+    void getArea()
     {
-        return side * side;
-    }
-
-    int getPerimeter()
-    {
-        return 4 * side;
+        System.out.println("The Area of the Square is "+(side * side));
     }
 
-    int getVolume()
+    void getPerimeter()
     {
-        return side * side * side;
+        System.out.println("The Perimeter of the Square is "+(4 * side));
+    }
+
+    void getVolume()
+    {
+        System.out.println("Square has no volume");
     }
 }
