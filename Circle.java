@@ -3,6 +3,7 @@ public class Circle extends Shape {
     double radius;
     Scanner sc=new Scanner(System.in);
     public Circle(){
+        System.out.println("Enter the Radius of the Circle : ");
         this.radius=sc.nextDouble();
     }
     @Override
