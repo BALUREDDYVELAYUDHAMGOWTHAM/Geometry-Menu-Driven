@@ -15,21 +15,23 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
-        System.out.println("Choose a shape: rectangle, square, circle");
-        String shapeType = scanner.next().toLowerCase();
+        System.out.println("Shape: To choose Rectangle -> Enter 1");
+        System.out.println("Shape: To choose Square -> Enter 2");
+        System.out.println("Shape: To choose Circle -> Enter 3");
+        int shapeType=scanner.nextInt();
         
         Shape shape = null;
 
         switch (shapeType) {
-            case "rectangle":
+            case 1:
                 shape = new Rectangle();
                 break;
                 
-                case "square":
+                case 2:
                 shape = new Square();
                 break;
                 
-                case "circle":
+                case 3:
                 shape = new Circle();
                 break;
 
