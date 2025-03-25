@@ -6,6 +6,7 @@ public class Circle extends Shape {
         System.out.print("Enter the Radius of the Circle : ");
         this.radius=sc.nextDouble();
     }
+    
     @Override
     void getArea() {
        System.out.println("Area of Cicle : "+(3.14*radius*radius));

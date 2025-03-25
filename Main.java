@@ -14,35 +14,36 @@ public class Main {
     }  
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        
-        System.out.println("Choose a shape: rectangle, square, circle");
-        String shapeType = scanner.next().toLowerCase();
-        
-        Shape shape = null;
-
-        switch (shapeType) {
-            case "rectangle":
-                shape = new Rectangle();
-                break;
-                
-                case "square":
-                shape = new Square();
-                break;
-                
-                case "circle":
-                shape = new Circle();
-                break;
-
-            default:
-                System.out.println("Invalid shape selected!");
-                System.exit(0);
-        }   
-
-        System.out.println("Choose operation: 1. Area 2. Perimeter 3. Volume");
-        while (true) { 
-            int input = scanner.nextInt();
-            Area(shape, input); 
-            if(input>3) break;
+        while(true) {
+            System.out.println("Choose a shape: rectangle, square, circle");
+            String shapeType = scanner.next().toLowerCase();
+            
+            Shape shape = null;
+    
+            switch (shapeType) {
+                case "rectangle":
+                    shape = new Rectangle();
+                    break;
+                    
+                    case "square":
+                    shape = new Square();
+                    break;
+                    
+                    case "circle":
+                    shape = new Circle();
+                    break;
+    
+                default:
+                    System.out.println("Invalid shape selected!");
+                    System.exit(0);
+            }   
+    
+            System.out.println("Choose operation: 1. Area 2. Perimeter 3. Volume");
+            while (true) { 
+                int input = scanner.nextInt();
+                Area(shape, input); 
+                if(input>3) break;
+            }
         }
     }
 }
