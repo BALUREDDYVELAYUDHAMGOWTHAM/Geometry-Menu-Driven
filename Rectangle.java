@@ -20,12 +20,6 @@ public class Rectangle extends Shape{
     void getPerimeter(){
         System.out.println("Perimeter: "+2*(length+breadth));
     }
-    
-    @Override
-    void getVolume(){
-        System.out.println("Assuming it has cuboid");
-        System.out.println("The Volume of the Cuboid is "+(length * breadth * height));
-    }
 }
 
    

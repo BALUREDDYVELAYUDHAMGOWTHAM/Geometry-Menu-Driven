@@ -15,10 +15,4 @@ public class Circle extends Shape {
     void getPerimeter() {
         System.out.println("Perimeter of Cicle : "+(2*3.14*radius));
     }
-
-    @Override
-    void getVolume() {
-        System.out.println("Assuming it has Sphere");
-        System.out.println("The Volume of the Sphere is "+((4*1.0/3) * 3.14 * radius * radius * radius));
-    }
 }

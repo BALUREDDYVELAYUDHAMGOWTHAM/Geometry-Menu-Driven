@@ -5,7 +5,6 @@ public class Main {
         switch (input) {
             case 1 -> shape.getArea();
             case 2 -> shape.getPerimeter();
-            case 3 -> shape.getVolume();
             default ->  {
                 System.out.println("Invalid input! Please choose a valid option.");
                 break;
@@ -44,7 +43,7 @@ public class Main {
         while (true) { 
             int input = scanner.nextInt();
             Area(shape, input); 
-            if(input>3) break;
+            if(input>2 && input<1) break;
         }
     }
 }
