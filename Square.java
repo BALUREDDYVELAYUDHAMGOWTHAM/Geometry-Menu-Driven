@@ -19,11 +19,4 @@ class Square extends Shape{
     {
         System.out.println("The Perimeter of the Square is "+(4 * side));
     }
-    
-    @Override
-    void getVolume()
-    {
-        System.out.println("Assuming it has Cube");
-        System.out.println("The Volume of the Cube is "+(side * side * side));
-    }
 }
